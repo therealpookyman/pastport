@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy · pastport</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@800&family=Hanken+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<main class="wrap">
+  <a class="mark" href="../">pastport</a>
+  <h1>Privacy</h1>
+  <p class="small">Effective October 7, 2026</p>
+  <p class="lede">pastport is built so your inbox and your ticket details stay on your phone. This page explains what the app reads, what it stores, and what anyone else can see.</p>
+
+  <h2>Signing in</h2>
+  <p>You sign in with Google. pastport receives your name and email address to create your account. Signing in does not give pastport access to your Gmail.</p>
+
+  <h2>Gmail (optional)</h2>
+  <p>If you choose to connect Gmail, pastport asks for <strong>read-only</strong> access (<code>gmail.readonly</code>). It can't send, delete, or change any email.</p>
+  <ul>
+    <li>The app searches for emails that look like tickets (for example from Ticketmaster, AXS, SeatGeek or DICE) and reads only those.</li>
+    <li>Emails are read and parsed <strong>on your phone</strong>. Email contents are never sent to pastport's servers.</li>
+    <li>From each ticket email the app keeps the event details: name, venue, city, date and, if present, your seat. It also keeps the seller, order number and email IDs so it doesn't import the same night twice. That information stays on your phone.</li>
+    <li>The Gmail access token is stored in your phone's Keychain. You can disconnect Gmail at any time in the app (Account → Ticket emails) or at <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+  </ul>
+
+  <h2>What is uploaded</h2>
+  <p>When you're signed in, cards you have opened sync to pastport's database (hosted by Supabase) so they're backed up and can be shared:</p>
+  <ul>
+    <li>the event details on the card (name, venue, city, date, seat if known) and its tier;</li>
+    <li>the photo or video you added to the card;</li>
+    <li>your profile (name and the handle you choose) and who you follow.</li>
+  </ul>
+  <p>Cards you haven't opened yet, and ticket-email details like the seller, order number and email IDs, are <strong>never uploaded</strong>.</p>
+  <p>To grade a card, the app sends the event's name, date, venue and city to pastport's server, which looks the artist or team up in public sources (MusicBrainz, ESPN and YouTube). Nothing about you is included in those lookups.</p>
+
+  <h2>Who can see your cards</h2>
+  <p>Only people who follow you, and only cards you've posted. This is enforced by the database itself, not just the app. Cards you haven't posted are visible only to you.</p>
+
+  <h2>Photos</h2>
+  <p>pastport asks for photo access only when you choose to add a photo or clip. It uses that access to suggest photos from the night of an event. Only the photo or clip you put on a card is uploaded.</p>
+
+  <h2>What we don't do</h2>
+  <ul>
+    <li>No ads, and no selling or renting your data.</li>
+    <li>Data from Gmail is not used for advertising, is not transferred to anyone else, and is not read by people, except with your permission, for security reasons, or as required by law.</li>
+    <li>No Gmail data is used to train AI models.</li>
+  </ul>
+  <p>pastport's use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+
+  <h2>Deleting your data</h2>
+  <p>Deleting a card in the app also removes it, and its photo or clip, from the server. Deleting the app removes everything stored on your phone. To delete your account and everything synced to it, email <a href="mailto:pookyman@gmail.com">pookyman@gmail.com</a> from the address you signed in with, and it will be deleted within 30 days.</p>
+
+  <h2>Beta</h2>
+  <p>pastport is in beta. If you install it through TestFlight, Apple may share crash reports and feedback you choose to send.</p>
+
+  <h2>Changes and contact</h2>
+  <p>If this policy changes, the date at the top will change too. Questions: <a href="mailto:pookyman@gmail.com">pookyman@gmail.com</a>.</p>
+
+  <footer><a href="../">pastport</a></footer>
+</main>
+</body>
+</html>

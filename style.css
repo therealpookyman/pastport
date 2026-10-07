@@ -1,0 +1,18 @@
+:root{--bg:#0d0c12;--card:#16141e;--text:#f2efe8;--soft:#b9b4c6;--muted:#857f94;--gold:#e2b84f;--line:#2a2633}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Hanken Grotesk",system-ui,sans-serif}
+a{color:var(--gold)}
+.wrap{max-width:680px;margin:0 auto;padding:48px 16px 80px}
+.mark{font:800 22px/1 "Big Shoulders Display",sans-serif;letter-spacing:.02em;color:var(--gold);text-decoration:none}
+h1{font:800 clamp(52px,14vw,88px)/.9 "Big Shoulders Display",sans-serif;text-transform:uppercase;margin:56px 0 16px}
+h2{font:800 26px/1.1 "Big Shoulders Display",sans-serif;text-transform:uppercase;letter-spacing:.01em;margin:40px 0 8px}
+p,li{color:var(--soft)}
+strong{color:var(--text)}
+.lede{font-size:19px;color:var(--soft);max-width:30em}
+.pill{display:inline-block;margin-top:24px;padding:12px 22px;border:1.5px solid var(--gold);border-radius:999px;color:var(--gold);text-decoration:none;font-weight:600}
+.steps{display:grid;gap:12px;margin:40px 0 0;padding:0;list-style:none}
+.steps li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
+.small{font-size:13px;color:var(--muted)}
+footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
+footer a{color:var(--muted)}
