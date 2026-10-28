@@ -16,3 +16,4 @@ strong{color:var(--text)}
 .small{font-size:13px;color:var(--muted)}
 footer{margin-top:64px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;color:var(--muted)}
 footer a{color:var(--muted)}
+footer .legal{margin:8px 0 0;font-size:12px}
